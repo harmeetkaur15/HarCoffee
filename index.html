@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>HarCoffee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="images/png" href="images/coffee.png">
+</head>
+<body>
+	<header>
+		
+
+		<div class="top">
+			<p class="logo">
+				<span class="icon-coffee"></span>
+				<span class="coffee">HarCoffee</span>
+				
+			</p>
+
+			<nav class="top-nav">
+				<ul class="top-ul">
+					<li><a href="index.html">
+						Home </a>
+					</li>
+					<li><a href="aboutus.html">
+						About Us</a>
+					</li>
+					<li><a href="products.html">
+						Products</a>
+					</li>
+					<li><a href="contactus.html">
+						Contact Us</a>
+					</li>
+					<li>
+						<span class="icon-search" onclick="show_search()" id="search"></span><span class="hidden">Search</span>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="pop_up_form hidden">
+				<label>Search here:</label>
+				<input type="text" name="search" placeholder="Search">
+				<button id="close" onclick="closeit()">Close</button>
+			</div>
+
+			<div class="hamburger">
+				<span class="icon-menu" onclick="show_small_menu()" id="hamburger"></span><span class="hidden">Search</span>
+
+				<span class="icon-search" onclick="show_search()"></span><span class="hidden">Search</span>
+
+			</div>
+
+			<nav class="small-nav top-menu">
+				<ul>
+					<li><a href="index.html">
+						Home </a>
+					</li>
+					<li><a href="aboutus.html">
+						About Us</a>
+					</li>
+					<li><a href="products.html">
+						Products</a>
+					</li>
+					<li><a href="contactus.html">
+						Contact Us</a>
+					</li>
+					
+				</ul>
+				<button id="closeSmallNav" onclick="close_nav()">close</button>
+			</nav>
+
+
+		</div>
+	</header>
+
+
+	<div class="slideshow-container">
+		<div class="slider-box">
+			<div class="slider">
+				<div class="mySlides fade">
+					<img src="images/slider1.jpg " alt =" " style="width:100%">
+				</div>
+				<div class="mySlides fade">
+					<img src="images/slider5.jpg " alt =" " style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/coffedrop.jpg " alt =" " style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/c10.jpg" alt =" " style="width:100%">
+					<!-- <div class="text">Caption Three</div> -->
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/slider4.jpg " alt =" " style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/c8.jpg" alt =" " style="width:100%">
+
+				</div>
+
+			</div>
+		</div>
+
+		<div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span>
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div  id="flag" class="second-nav">
+		<ul>
+			<li>
+				<a href="#"><span class="icon-facebook-with-circle"></span></a>
+			</li>
+			<li>
+				<a href="#"><span class="icon-twitter-with-circle"></span></a>
+			</li>
+			<li>
+				<a href="#"><span class="icon-instagram-with-circle"></span></a>
+			</li>
+			<li>
+				<a href="#"><span class="icon-google-plus3"></span></a>
+			</li>
+		</ul>
+	</div>	
+
+
+
+
+	<div class="welcome">
+		<div class="welcome-content">
+			<h1 class="welcome-p"><span class="icon-coffee"></span>
+				Welcome
+			</h1>
+			<p>
+				WE serve the best coffee in the town. Our mission is to be best and serve you better. We always work to excel in our field. Founded in 2014, we take initiatives to fulfill the expectations of the customers.</p>
+				<div class="welcome-button">
+					<button>Read More</button>
+				</div>
+				
+			</div>
+
+			<div class="timings">
+				<h1 class="welcome-p"><span class="icon-time"></span>
+					Hours
+				</h1>
+
+				<p>
+					We are open  24 X 7.
+				</p>
+
+			</div>
+
+			<div class="open1">
+				<p class="open">
+					OPEN DAILY!
+				</p>
+			</div>
+
+			
+		</div>
+
+		<div class="parallax-coffee">
+			<div class="max-width">
+				<div class="products">
+
+					<div  class="products-back color1">
+						<h2 class="welcome-p"><span class="icon-coffee"></span>
+							Coffee</h2>
+							<p>
+								Coffee is one of the most popular beverages and we are specialized in it.
+							</p>
+							<a href="products.html#prod-coffee" class="readmore">Read More...</a>
+
+
+						</div>
+
+						<div class="products-back color2">
+							<h2 class="welcome-p"><span class="icon-icecream"></span>Desserts
+							</h2>
+							<p>
+								A dessert completes a meal. We always try to provide variations in flavors, texture and appearances.
+							</p>
+							<a href="products.html#prod-desserts" class="readmore">Read More...</a>
+
+
+						</div>
+
+						<div class="products-back color3">
+							<h2 class="welcome-p specials"><span class="icon-checkmark"></span>
+								Specials
+							</h2>
+							<p>
+								We have specials for you in combo packs. We offer Special Combo Packs on Tuesdays.
+							</p>
+							<a href="products.html#prod-specials" class="readmore">Read More...</a>
+
+
+						</div>
+					</div>
+					<div class="products-images">
+						<div class="four-images">
+							<img src="images/c10.jpg" alt="">
+
+						</div>
+
+						<div class="four-images">
+							<img src="images/c11.jpg" alt="">
+
+						</div>
+
+						<div class="four-images">
+							<img src="images/a11.jpg" alt="">
+
+						</div>
+						<div class="four-images">
+							<img src="images/c13.jpg" alt="">
+
+						</div>
+					</div>
+
+					<div class="tagline">
+						<p class="tagline-one">
+							“Anything can happen over coffee”.
+						</p>
+						<p class="tagline-two">
+							“Canada's Best Coffee”.
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="parallax-articles article-box">
+				<div class="max-width">
+					<h2>POPULAR</h2>
+					<div class="articles-boxes">
+						<article class="img-box">
+
+							<img src="images/article10.jpg" alt="">
+							<h3>10 Reasons You Should Drink Coffee Everyday <button>Read More...</button></h3>
+
+						</article>
+
+						<article class="img-box">
+
+							<img src="images/c6.jpg" alt="">
+							<h3>How Black Coffee Helps For Weight Loss <button>Read More...</button></h3>
+
+						</article>
+
+						<article class="img-box-small">
+
+							<img src="images/article4.jpg" alt="">
+							<h3>How Morning Coffee Helps To Boost Your Mood <button>Read More...</button></h3>
+
+						</article>
+						<article class="img-box-small">
+
+							<img src="images/article6.jpg" alt="">
+							<h3>How Coffee Could Reduce Chance Of Getting Skin Cancer <button>Read More...</button></h3>
+
+						</article>
+						<article class="img-box-small">
+
+							<img src="images/woman.jpg" alt="">
+							<h3>How Coffee Could Reduce Risk Of Developing Type 2 Diabetes <button>Read More...</button></h3>
+
+						</article>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class="footer">
+					<nav class="footer-nav">
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="aboutus.html">About Us</a>
+							</li>
+							<li>
+								<a href="products.html">Products</a>
+							</li>
+							<li>
+								<a href="contactus.html">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
+
+					<p class="footer-p">
+						"WE" serve the best coffee in the town. Our mission is to be best and server better.Best products by best shop.
+						"Anything can happen over a coffee."
+					</p>
+
+					<div class="footer-div">
+						<h1>Stay Connected</h1>
+						<ul  class="footer-ul">
+							<li>
+								<a href="#"><span class="icon-facebook-with-circle"></span></a>
+							</li>
+							<li>
+								<a href="#"><span class="icon-twitter-with-circle"></span></a>
+							</li>
+							<li>
+								<a href="#"><span class="icon-instagram-with-circle"></span></a>
+							</li>
+							<li>
+								<a href="#"><span class="icon-google-plus3"></span></a>
+							</li>
+						</ul>
+
+
+					</div>
+
+					
+				</div>
+				<div class="copyright">
+					&copy; 2017 designed and developed by Harmeet
+				</div>
+
+
+			</footer>
+
+
+			<script src="slider.js"></script>
+			<script src="contact.js"></script>
+		</body>
+		</html>

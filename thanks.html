@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>HarCoffee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="images/png" href="images/coffee.png">
+</head>
+<body>
+	<header>
+		
+
+		<div class="top">
+			<p class="logo">
+				<span class="icon-coffee"></span>
+				<span class="coffee">HarCoffee</span>
+				
+			</p>
+
+			<nav class="top-nav">
+				<ul class="top-ul">
+					<li><a href="index.html">
+						Home </a>
+					</li>
+					<li><a href="aboutus.html">
+						About Us</a>
+					</li>
+					<li><a href="products.html">
+						Products</a>
+					</li>
+					<li><a href="contactus.html">
+						Contact Us</a>
+					</li>
+					<li>
+						<span class="icon-search" onclick="show_search()"></span><span class="hidden">Search</span>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="pop_up_form hidden">
+				<label>Search here:</label>
+				<input type="text" name="search" placeholder="Search">
+				<button id="close" onclick="closeit()">Close</button>
+			</div>
+
+			<div class="hamburger">
+				<span class="icon-menu" onclick="show_small_menu()" id="hamburger"></span><span class="hidden">Search</span>
+
+				<span class="icon-search" onclick="show_search()"></span><span class="hidden">Search</span>
+
+			</div>
+
+			<nav class="small-nav top-menu">
+				<ul>
+					<li><a href="index.html">
+						Home </a>
+					</li>
+					<li><a href="aboutus.html">
+						About Us</a>
+					</li>
+					<li><a href="products.html">
+						Products</a>
+					</li>
+					<li><a href="contactus.html">
+						Contact Us</a>
+					</li>
+					
+				</ul>
+				<button id="closeSmallNav" onclick="close_nav()">close</button>
+			</nav>
+
+
+		</div>
+	</header>
+
+
+
+	<div class="parallax-thanks">
+		<div class="thanks-page">
+		<p>Thanks for contacting us. We will revert you back soon.
+			</p>
+
+			<a href="index.html">Home</a>
+			</div>
+	</div>
+
+
+
+
+
+
+	<footer>
+	<div class="footer">
+		<nav class="footer-nav">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="aboutus.html">About Us</a>
+				</li>
+				<li>
+					<a href="products.html">Products</a>
+				</li>
+				<li>
+					<a href="contactus.html">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+
+		<p class="footer-p">
+			"WE" serve the best coffee in the town. Our mission is to be best and server better.Best products by best shop.
+			"Anything can happen over a coffee."
+		</p>
+
+		<div class="footer-div">
+			<h1>Stay Connected</h1>
+			<ul  class="footer-ul">
+				<li>
+					<a href="#"><span class="icon-facebook-with-circle"></span></a>
+				</li>
+				<li>
+					<a href="#"><span class="icon-twitter-with-circle"></span></a>
+				</li>
+				<li>
+					<a href="#"><span class="icon-instagram-with-circle"></span></a>
+				</li>
+				<li>
+					<a href="#"><span class="icon-google-plus3"></span></a>
+				</li>
+			</ul>
+
+
+		</div>
+
+		
+	</div>
+	<div class="copyright">
+		&copy; 2017 designed and developed by Harmeet
+	</div>
+
+
+</footer>
+
+
+<script src="slider.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>HarCoffee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="images/png" href="images/coffee.png">
+</head>
+<body>
+	<header>
+		
+
+		<div class="top">
+			<p class="logo">
+				<span class="icon-coffee"></span>
+				<span class="coffee">HarCoffee</span>
+				
+			</p>
+
+			<nav class="top-nav">
+				<ul class="top-ul">
+					<li><a href="index.html">
+						Home </a>
+					</li>
+					<li><a href="aboutus.html">
+						About Us</a>
+					</li>
+					<li><a href="products.html">
+						Products</a>
+					</li>
+					<li><a href="contactus.html">
+						Contact Us</a>
+					</li>
+					<li>
+						<span class="icon-search" onclick="show_search()"></span><span class="hidden">Search</span>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="pop_up_form hidden">
+				<label>Search here:</label>
+				<input type="text" name="search" placeholder="Search">
+				<button id="close" onclick="closeit()">Close</button>
+			</div>
+
+			<div class="hamburger">
+				<span class="icon-menu" onclick="show_small_menu()" id="hamburger"></span><span class="hidden">Search</span>
+
+				<span class="icon-search" onclick="show_search()" id="search"></span><span class="hidden">Search</span>
+
+			</div>
+
+			<nav class="small-nav top-menu">
+				<ul>
+					<li><a href="index.html">
+						Home </a>
+					</li>
+					<li><a href="aboutus.html">
+						About Us</a>
+					</li>
+					<li><a href="products.html">
+						Products</a>
+					</li>
+					<li><a href="contactus.html">
+						Contact Us</a>
+					</li>
+					
+				</ul>
+				<button id="closeSmallNav" onclick="close_nav()">close</button>
+			</nav>
+
+
+		</div>
+	</header>
+	
+
+	<main class="parallax-contactus">
+		<div class="contact">
+			<h1>CONTACT US</h1>
+		</div>
+		<div class="max-width-contact">
+			
+			<form class="contact-form" method="POST" action="https://formspree.io/harmeet0752@gmail.com">
+				<input name="_next" value="http://mylinux.langara.bc.ca/~hkaur64/HarCoffee/thanks.html" type="hidden">
+				<label>Name:</label>
+				<input type="text" name="firstname" placeholder="Your Name">
+				<label>Email:</label>
+				<input type="text" name="email" placeholder="Your Email">
+				<label>Phone:</label>
+				<input type="text" name="phone" placeholder="Your Phone">
+				<label>Address:</label>
+				<input type="text" name="address" placeholder="Your Address">
+				<label>Zip Code:</label>
+				<input type="text" name="zip" placeholder="Your Zip Code">
+				<label>Message:</label>
+				<textarea name="message" placeholder="Your Message"  rows="7" cols="5"></textarea>
+				<button id="submit-thanks" onclick="submit()">Send</button>
+			</form>
+
+
+		</div>
+
+		<p id="thanks" class="hidden">Thanks for submitting the form.</p>
+
+		<div class="location">
+			<h1>Our Location</h1>
+
+
+			<div  class="iframe">
+				<div class="iframe-address">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2605.748239421081!2d-123.11214381393542!3d49.2243015140485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x5486746f412563f7%3A0x36606d221509fdfe!2sLangara+College%2C+100+W+49th+Ave%2C+Vancouver%2C+BC+V5Y+2Z6!3m2!1d49.224567799999996!2d-123.108437!5e0!3m2!1sen!2sca!4v1491446474367" allowfullscreen>
+					</iframe>
+
+					<div class="address-contact">
+						<h2>
+							ADDRESS
+						</h2>
+						<div>
+							<p>HarCoffee</p>
+							<p> 100 W 49th Ave</p>
+							<p> Vancouver, British Columbia</p>
+							<p>V5Y 2Z6</p>
+							<p>+1 (604) 323 5511</p>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</main>
+
+
+	<footer>
+		<div class="footer">
+			<nav class="footer-nav">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="aboutus.html">About Us</a>
+					</li>
+					<li>
+						<a href="products.html">Products</a>
+					</li>
+					<li>
+						<a href="contactus.html">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+
+			<p class="footer-p">
+				"WE" serve the best coffee in the town. Our mission is to be best and server better.Best products by best shop.
+				"Anything can happen over a coffee."
+			</p>
+
+			<div class="footer-div">
+				<h1>Stay Connected</h1>
+				<ul  class="footer-ul">
+					<li>
+						<a href="#"><span class="icon-facebook-with-circle"></span></a>
+					</li>
+					<li>
+						<a href="#"><span class="icon-twitter-with-circle"></span></a>
+					</li>
+					<li>
+						<a href="#"><span class="icon-instagram-with-circle"></span></a>
+					</li>
+					<li>
+						<a href="#"><span class="icon-google-plus3"></span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<div class="copyright">
+			&copy; 2017 designed and developed by Harmeet
+		</div>
+
+
+	</footer>
+
+
+	<script src="contact.js"></script>
+</body>
+</html>

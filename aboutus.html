@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>HarCoffee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="images/png" href="images/coffee.png">
+</head>
+<body>
+	<header>
+		
+
+		<div class="top">
+			<p class="logo">
+				<span class="icon-coffee"></span>
+				<span class="coffee">HarCoffee</span>
+				
+			</p>
+
+			<nav class="top-nav">
+				<ul class="top-ul">
+					<li><a href="index.html">
+						Home </a>
+					</li>
+					<li><a href="aboutus.html">
+						About Us</a>
+					</li>
+					<li><a href="products.html">
+						Products</a>
+					</li>
+					<li><a href="contactus.html">
+						Contact Us</a>
+					</li>
+					<li>
+						<span class="icon-search" onclick="show_search()"></span><span class="hidden">Search</span>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="pop_up_form hidden">
+				<label>Search here:</label>
+				<input type="text" name="search" placeholder="Search">
+				<button id="close" onclick="closeit()">Close</button>
+			</div>
+
+			<div class="hamburger">
+				<span class="icon-menu" onclick="show_small_menu()" id="hamburger"></span><span class="hidden">Search</span>
+
+				<span class="icon-search" onclick="show_search()" id="search"></span><span class="hidden">Search</span>
+
+			</div>
+
+			<nav class="small-nav top-menu">
+				<ul>
+					<li><a href="index.html">
+						Home </a>
+					</li>
+					<li><a href="aboutus.html">
+						About Us</a>
+					</li>
+					<li><a href="products.html">
+						Products</a>
+					</li>
+					<li><a href="contactus.html">
+						Contact Us</a>
+					</li>
+					
+				</ul>
+				<button id="closeSmallNav" onclick="close_nav()">close</button>
+			</nav>
+
+
+		</div>
+	</header>
+
+	<div class="parallax-aboutus">
+		<div class="about-us-container">
+			<div class="who">
+				<div class="who-inside">
+					<h1>Who we are</h1>
+					<p>
+						We are a group of people who are dedicated towards their work. We work together constantly to learn and improve our decaffeination techniques. “HarCoffee” was founded in May, 2014. Since then, it is evolving and serving the customers. We have expanded our business with experience and your support. 
+					</p>
+				</div>
+
+				<div class="inside-img">
+					<img src="images/group.jpg" alt="">
+				</div>
+				
+			</div>
+
+			<div class="team">
+				<h1>
+					Meet Our Team
+				</h1>
+				<div class="round-images">
+					<div class="round-img-width">
+						<img src="images/p1.jpg" alt="" class="round">
+						<p class="bg-color">Hello, I am Harry.I work to grab every oppurtunity in my life. I work as a manager at “HarCoffee”. </p>
+					</div>
+					<div class="round-img-width">
+						<img src="images/p2.jpg" alt="" class="round">
+						<p class="bg-color">I am Katy. I work as a supervisor at “HarCoffee”. I have been working here for 1 year.</p>
+					</div>
+					<div class="round-img-width">
+						<img src="images/p3.jpg" alt="" class="round">
+						<p class="bg-color">I am John. I am a coffee maker. I am dedicated towards my work. I enjoy my work.</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="team">
+				<h1>
+					Awards
+				</h1>
+				<p>We got many appreciations for working good in our field. It really encourages us to do better.</p>
+				<div class="award-images">
+					<div  class="round-images">
+						<img src="images/award.gif" alt="">
+					</div>
+					<div  class="round-images">
+						<img src="images/award1.gif" alt="">
+					</div>
+
+				</div>
+			</div>
+
+			<div class="team">
+				<h1>
+					Coffee Sources
+				</h1>
+				<p> We have  developed ethical guidelines for sourcing that help us purchase coffee which is responsibly grown. </p>
+				
+				<div class="center">
+					<img src="images/agri1.jpg" alt="">
+
+					
+					
+					<button>Read More</button>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+	<footer>
+		<div class="footer">
+			<nav class="footer-nav">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="aboutus.html">About Us</a>
+				</li>
+				<li>
+					<a href="products.html">Products</a>
+				</li>
+				<li>
+					<a href="contactus.html">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+
+			<p class="footer-p">
+				WE serve the best coffee in the town. Our mission is to be best and server better.
+			</p>
+
+			<div class="footer-div">
+				<h1>Stay Connected</h1>
+				<ul  class="footer-ul">
+					<li>
+						<a href="#"><span class="icon-facebook-with-circle"></span></a>
+					</li>
+					<li>
+						<a href="#"><span class="icon-twitter-with-circle"></span></a>
+					</li>
+					<li>
+						<a href="#"><span class="icon-instagram-with-circle"></span></a>
+					</li>
+					<li>
+						<a href="#"><span class="icon-facebook-with-circle"></span></a>
+					</li>
+				</ul>
+
+
+			</div>
+	
+		</div>
+		<div class="copyright">
+			&copy; 2017 designed and developed by Harmeet
+		</div>
+
+
+	</footer>
+
+
+<script src="contact.js"></script>
+</body>
+</html>
